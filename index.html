@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Todo List</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Todo List</h1>
+	<section id="todoapp">
+		<header id="header">
+			<input id="new-todo" placeholder="Add an item" autofocus>
+		</header>
+		<section id="main">
+			<input id="toggle-all" class="hide" type="checkbox">
+			<label for="toggle-all">Mark all as complete</label>
+			<ul id="todo-list">
+				
+			</ul>
+		</section>
+		<footer id="footer" class="hide">
+			<span id="todo-count"><strong></strong>  left</span>
+			<ul id="filters">
+				<li class="selected">
+					<a href="#/all">All</a>
+				</li>
+				<li>
+					<a href="#/active">Active</a>
+				</li>
+				<li>
+					<a href="#/completed">Completed</a>
+				</li>
+			</ul>
+			<button class="hide" onclick="controller.destroyCompleted()" id="clear-completed">Clear completed</button>
+		</footer>
+	</section>
+
+	<script src="js/director.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
